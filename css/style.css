@@ -1,0 +1,729 @@
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/valorant');
+
+@font-face {
+    font-family: "Tungsten-Bold";
+    src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+    src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten-Bold")format("svg");
+}
+
+@import url(https://db.onlinewebfonts.com/c/561f38b1f4570de0fb8a39d691ab058c?family=Tungsten-Bold);
+
+/* Header */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+     z-index: 2; 
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Tungsten-Bold', sans-serif;
+}
+
+.logo img {
+    width: 400px;
+}
+
+.logo p {
+    color: #ffffff;
+    font-size: 90px;
+    margin-left: 115px;
+    margin-top: -160px;
+    text-shadow: 
+    -2px -1px 0 #000000,  
+     2px -1px 0 #000000,
+    -2px  1px 0 #000000,
+     2px  1px 0 #000000;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    z-index: 1; 
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.col-2 p {
+   font-size: 40px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 30px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    display: inline-block;
+    background: #EE5961;
+    color: white;
+    padding: 18px 45px;
+    margin: 30px 0;
+    transition: background 0.5s;
+    border: 1px solid white;
+    font-family: 'Tungsten-Bold', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255);
+    color: #111111;
+    border: 1px solid white;
+}
+
+.header {
+    position: relative;
+    background: radial-gradient(#fff, #c96cff);
+        width: 100%;
+        height: 100vh; 
+        overflow: hidden;
+}
+
+.header .row {
+    margin-top: 70px;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover; 
+    z-index: 0; 
+    margin-top: -80px;
+}
+
+/* Em alta */
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+body {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'VALORANT', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+
+.title::after {
+    content: '';
+    background: #EE5961;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    font-weight: normal;
+    color: #111111;
+    font-size: 23px;
+}
+
+.col-4 p {
+    font-size: 16px;
+    color: #111111;
+    font-family: 'Tungsten', sans-serif;
+}
+
+.col-4 .price {
+    text-decoration: line-through solid red;
+}
+
+.aval .fa-solid {
+    color: #EE5961;
+}
+
+.aval .fa-regular {
+    color: #EE5961;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.oferta {
+    position: relative; 
+    margin-top: 80px;
+    padding: 30px 0;
+    overflow: hidden; 
+}
+
+.offer-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.small-container {
+    position: relative; 
+    z-index: 1; 
+}
+
+.col-2 .imgOferta {
+    padding: 50px;
+}
+
+small {
+    color: #ffffff;
+    font-family: 'Tungsten', sans-serif;
+    font-size: 20px;
+    box-shadow: 0 0 20px 0px#111111;
+}
+
+.comentario {
+    padding-top: 100px;
+}
+
+.comentario .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px#111111;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.comentario .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.comentario .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.fa-solid.fa-quote-left {
+    font-size: 34px;
+    color: #EE5961;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.comentario .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.patrocinios {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    transform: translateY(-10px);
+    filter: grayscale(0%);
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logoApp {
+    margin-top: 20px;
+}
+
+.logoApp img {
+    width: 140px;
+    cursor: pointer;
+}
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.iconeMenu {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*------- produtoshtml ------*/
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #EE5961;
+    padding: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.btnPagina {
+    margin: 0 auto 80px;
+}
+
+.btnPagina span {
+    display: inline-block;
+    border: 1px solid #EE5961;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.btnPagina span:hover {
+    background-color: #EE5961;
+    color: #fff;
+}
+
+/*---- produtoDetalhe ----*/
+.produtoUnico {
+    margin-top: 80px;
+}
+
+.produtoUnico .col-2 img {
+    padding: 0;
+}
+
+.produtoUnico .col-2 {
+    padding: 20px;
+}
+
+.produtoUnico h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.produtoUnico select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.produtoUnico input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #EE5961;
+}
+
+input:focus {
+    outline: none;
+}
+
+.produtoUnico .fa {
+    color: #EE5961;
+    margin-left: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/*------Carrinho-----*/
+
+.pagCarrinho {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.infoCarrinho {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #EE5961;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #EE5961;
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.precoTotal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.precoTotal table {
+    border-top: 3px solid #EE5961;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+/*------ conta.html ----------*/
+.pagConta {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #e4b5ff);
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px#111111;
+    overflow: hidden;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#loginForm {
+    left: -300px;
+}
+
+#regForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#indicador {
+    width: 100px;
+    border: none;
+    background: #EE5961;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+/*----- Sobre.html -----*/
+.pagSobre {
+    margin-bottom: 20px;
+}
+
+.pagSobre .sobre {
+    margin-left: 50px;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0#111111;
+    height: 300px;
+}
+
+.sobre h1,
+h4 {
+    margin: 10px;
+}
+
+.sobre h4 {
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    nav ul {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul:hover {
+    cursor:pointer;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .iconeMenu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+
+    .single-product .row {
+        text-align: left;
+    }
+
+    .single-product .col-2 {
+        padding: 20px 0;
+    }
+
+    .single-product h1 {
+        font-size: 26px;
+        line-height: 22px;
+    }
+
+    .infoCarrinho p {
+        display: none;
+    }
+}
